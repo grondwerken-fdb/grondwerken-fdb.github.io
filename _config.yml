@@ -38,11 +38,16 @@ url: "https://grondwerken-fdb.github.io" # the base hostname & protocol for your
 
 # Build settings
 theme: minima
-plugins:
+# plugins:
   # - jekyll-feed
+
 
 include:
   - _pages
+
+collections:
+  projects:
+    output: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -58,8 +63,3 @@ include:
 #   - gemfiles/
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/

@@ -205,8 +205,6 @@ table td { border: 1px solid #e8e8e8; }
 
 .archive_img { width: inherit; }
 
-.post_img { float: left; width: 45%; height: auto; margin: 2.5%; }
-
 .page-link { margin-right: 0 !important; padding-left: 10px; padding-right: 10px; }
 
 .page-link:hover { color: green; }
@@ -224,3 +222,5 @@ table td { border: 1px solid #e8e8e8; }
 .site-footer { padding-bottom: 0px; }
 
 .footer-col { margin-bottom: 1px; }
+
+.project-img { width: 75%; display: block; margin-left: auto; margin-right: auto; height: auto; margin-bottom: 1%; }

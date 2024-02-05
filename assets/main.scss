@@ -30,13 +30,6 @@ body {
     width: inherit;
 }
 
-.post_img {
-    float: left;
-    width: 45%;
-    height: auto;
-    margin: 2.5%;
-}
-
 .page-link {
     margin-right: 0 !important;
     padding-left: 10px;
@@ -87,6 +80,11 @@ body {
     margin-bottom: 1px;
 }
 
-// #lang_en {
-//     position: relative;
-// }
+.project-img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    margin-bottom: 1%;
+}
