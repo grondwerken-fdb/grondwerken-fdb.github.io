@@ -26,15 +26,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
       - name: setup python
         uses: actions/setup-python@v4
         with:
           python-version: 3.8 #install the python needed
       - name: exec Python file
-        run: |
-        python ScanFiles.py
-      - name: Checkout
-        uses: actions/checkout@v4
+        run: python ScanFiles.py
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Build with Jekyll
