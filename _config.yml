@@ -39,7 +39,7 @@ url: "https://grondwerken-fdb.github.io" # the base hostname & protocol for your
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+  # - jekyll-feed
 
 include:
   - _pages
