@@ -20,6 +20,11 @@
 
 domain: grondwerken-vzw.github.io
 title: Grondwerken Frank De Backer
+author: Frank De Backer
+city: 9940 Evergem
+address: Strooiendorp 25
+tel: 09 372 06 32
+mobile: 0477 610 723
 email: frank_de_backer@telenet<b>telenet</b>.be
 description: >- # this means to ignore newlines until next tag
   HIER MOET EEN BESCHRIJVING KOMEN
@@ -35,6 +40,9 @@ url: "https://grondwerken-fdb.github.io" # the base hostname & protocol for your
 theme: minima
 plugins:
   - jekyll-feed
+
+include:
+  - _pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.

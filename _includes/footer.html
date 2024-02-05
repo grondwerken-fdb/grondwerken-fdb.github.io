@@ -1,9 +1,11 @@
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
+  <hr style = "margin-bottom: 1vh">
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
+    <h2 class="footer-heading">Contact</h2>
 
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
@@ -15,22 +17,34 @@
               {{ site.title | escape }}
             {%- endif -%}
             </li>
+
+            {%- if site.city -%}
+              {%- if site.address -%}
+                <li><i class="fa fa-fw fa-map-marker"></i> {{ site.city }}, {{site.address}}</li>
+              {%- endif -%}
+            {%- endif -%}
+
+            {%- if site.tel -%}
+              <li><i class="fa fa-fw fa-phone"></i> {{ site.tel }}</li>
+            {%- endif -%}
+
+            {%- if site.mobile -%}
+              <li><i class="fa fa-fw fa-mobile"></i> {{ site.mobile }}</li>
+            {%- endif -%}
+
             {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              <li><i class="fa fa-fw fa-envelope"></i> <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
       </div>
-
       <div class="footer-col footer-col-2">
         {%- include social.html -%}
       </div>
-
       <div class="footer-col footer-col-3">
         <!-- <p>{{- site.description | escape -}}</p> -->
-        <p>{%- include_relative assets/description.txt -%}</p>
+        <p>{%- include description.txt -%}</p>
       </div>
     </div>
 
   </div>
-
 </footer>

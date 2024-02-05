@@ -220,3 +220,7 @@ table td { border: 1px solid #e8e8e8; }
 #lang_nl { padding-right: 10px; }
 
 .post-link { font-size: 20px; }
+
+.site-footer { padding-bottom: 0px; }
+
+.footer-col { margin-bottom: 1px; }
