@@ -1,5 +1,84 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
 @import "minima";
+
+body {
+    // background-color:  #d5f5e3 ;
+}
+
+.social-media-list {
+    margin: 0;
+}
+
+.rule {
+    color: gray;
+    border: 0;
+    border-top: 1px solid;
+    height: 1px;
+}
+
+.site-footer {
+    border: unset !important;
+}
+
+.site-header {
+    border-bottom: unset !important;
+}
+
+.archive_img {
+    width: inherit;
+}
+
+.post_img {
+    float: left;
+    width: 45%;
+    height: auto;
+    margin: 2.5%;
+}
+
+.page-link {
+    margin-right: 0 !important;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page-link:hover {
+    color: green;
+}
+
+@media screen and (min-width: 600px) {
+
+    .page-link {
+        position: relative;
+        bottom: 0;
+        display: inline-block;
+        line-height: inherit !important;
+        transition: bottom ease 0.5s;
+    }
+
+    .page-link:hover {
+        bottom: -10px;
+    }
+
+}
+
+.u-email {
+    color: #2a7ae2;
+}
+
+.u-email b {
+    display: none;
+}
+
+#lang_nl {
+    padding-right: 10px;
+}
+
+.post-link {
+    font-size: 20px;
+}
+
+// #lang_en {
+//     position: relative;
+// }
