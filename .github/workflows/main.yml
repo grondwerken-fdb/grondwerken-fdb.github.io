@@ -16,6 +16,8 @@ jobs:
           python-version: 3.8 #install the python needed
       - name: Install dependencies
         run: python -m pip install --upgrade pip
+      - name: Scan files
+        run: python ScanFiles.py
       - name: execute py script # run file
         run: |
           python ScanFiles.py
