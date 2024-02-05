@@ -22,5 +22,5 @@ jobs:
           git config user.name grondwerken-fdb
           git config user.email grondwerken-fdb@github.com
           git add .
-          git commit -m "generated files"
+          git commit -m "generated files" || true
           git push
