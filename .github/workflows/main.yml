@@ -19,3 +19,8 @@ jobs:
       - name: execute py script # run file
         run: |
           python ScanFiles.py
+          git config user.name grondwerken-fdb
+          git config user.email grondwerken-fdb@github.com
+          git add .
+          git commit -m "generated files"
+          git push
