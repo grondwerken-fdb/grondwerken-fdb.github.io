@@ -10,7 +10,7 @@ for folder in select:
         file.write("layout: project\n")
         file.write("link: " + folder + "\n")
         file.write("date: " + data[0].strip() + "\n")
-        file.write("location: " + data[1].strip() + "\n")
+        file.write("location: " + data[1].strip().title() + "\n")
         file.write("title: " + data[2].strip() + "\n")
         file.write("permalink: /projects/" + data[2].strip() + "\n")
         file.write("---\n")
