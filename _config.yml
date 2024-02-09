@@ -27,7 +27,7 @@ tel: 09 372 06 32
 mobile: 0477 610 723
 email: frank_de_backer@telenet<b>telenet</b>.be
 description: >- # this means to ignore newlines until next tag
-  HIER MOET EEN BESCHRIJVING KOMEN
+  
 baseurl: "" # the subpath of your site, e.g. /blog
 
 url: "https://grondwerken-fdb.github.io" # the base hostname & protocol for your site, e.g. http://example.com

@@ -20,10 +20,17 @@ body {
 
 .site-footer {
     border: unset !important;
+	padding-bottom: 0px;
+}
+
+a.site-title site-title-fdb, a.site-title:visited site-title-fdb{
+	color: yellow;
 }
 
 .site-header {
-    border-bottom: unset !important;
+	background-color: green;
+	text-color: yellow;	
+	border-bottom: unset !important;
 }
 
 .archive_img {
@@ -34,10 +41,6 @@ body {
     margin-right: 0 !important;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.page-link:hover {
-    color: green;
 }
 
 @media screen and (min-width: 600px) {
@@ -52,7 +55,8 @@ body {
 
     .page-link:hover {
         bottom: -10px;
-    }
+		color: yellow;
+	}
 
 }
 
@@ -72,9 +76,6 @@ body {
     font-size: 20px;
 }
 
-.site-footer {
-    padding-bottom: 0px;
-}
 
 .footer-col {
     margin-bottom: 1px;

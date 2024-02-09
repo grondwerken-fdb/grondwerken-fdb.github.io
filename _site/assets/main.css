@@ -199,18 +199,18 @@ table td { border: 1px solid #e8e8e8; }
 
 .rule { color: gray; border: 0; border-top: 1px solid; height: 1px; }
 
-.site-footer { border: unset !important; }
+.site-footer { border: unset !important; padding-bottom: 0px; }
 
-.site-header { border-bottom: unset !important; }
+a.site-title site-title-fdb, a.site-title:visited site-title-fdb { color: yellow; }
+
+.site-header { background-color: green; text-color: yellow; border-bottom: unset !important; }
 
 .archive_img { width: inherit; }
 
 .page-link { margin-right: 0 !important; padding-left: 10px; padding-right: 10px; }
 
-.page-link:hover { color: green; }
-
 @media screen and (min-width: 600px) { .page-link { position: relative; bottom: 0; display: inline-block; line-height: inherit !important; transition: bottom ease 0.5s; }
-  .page-link:hover { bottom: -10px; } }
+  .page-link:hover { bottom: -10px; color: yellow; } }
 .u-email { color: #2a7ae2; }
 
 .u-email b { display: none; }
@@ -218,8 +218,6 @@ table td { border: 1px solid #e8e8e8; }
 #lang_nl { padding-right: 10px; }
 
 .post-link { font-size: 20px; }
-
-.site-footer { padding-bottom: 0px; }
 
 .footer-col { margin-bottom: 1px; }
 
