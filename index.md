@@ -1,6 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
 order: 0
@@ -16,3 +14,5 @@ Grondwerken Frank DE BACKER staat in voor al uw grondwerken:
 - ...
 
 <img src = "assets\images\2021-09-28_OUDENAARDE_Heraanleg voor- en zijtuin\2021-09-28_12-03-13_OUDENAARDE_Heraanleg voor- en zijtuin.jpg"/>
+
+Indien u meer foto's wil zien, nodigen wij u uit om ons <a href = "{{ site.baseurl }}Realisaties">overzicht</a> van realisaties en projecten te bekijken.

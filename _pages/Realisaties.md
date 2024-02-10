@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Portfolio
-permalink: /Portfolio
+title: Realisaties
+permalink: /Realisaties
+order: 1
 ---
 
 {%- if site.projects.size > 0 -%}
@@ -10,10 +11,10 @@ permalink: /Portfolio
     {%- for post in site.projects -%}
     <li>
       {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
+      <!-- <span class="post-meta">{{ post.date | date: date_format }}</span> -->
       <h3>
         <a class="post-link" href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
+          {{ post.location | escape }}: {{ post.title | escape }}
         </a>
       </h3>
       {%- if site.show_excerpts -%}

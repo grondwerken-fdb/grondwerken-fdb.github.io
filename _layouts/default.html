@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+<script lang="javascript">
+  window.addEventListener("scroll",
+      function () {
+        if(window.pageYOffset > 0) {
+          document.getElementById("back-to-top").style.color = "#1756a9";
+          document.getElementById("back-to-top").style.borderColor = "#1756a9";
+        } else {
+          document.getElementById("back-to-top").style.color = "white";
+          document.getElementById("back-to-top").style.borderColor = "white";
+        }
+        document.getElementById("back-to-top").style.top = Math.min(
+          0.8 * window.innerHeight + window.pageYOffset,
+          document.getElementsByClassName("site-footer h-card")[0].offsetTop - 0.1 * window.innerHeight
+        ) + "px";
+      }
+  );
+
+  function backToTop() {
+    window.scrollBy(0, -window.pageYOffset);
+  }
+</script>
+
   {%- include head.html -%}
 
   <body>
 
+    <img class = "logo" src = "/assets/images/FDB_LOGO_Large_cr.jpg"/>
+
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
+
+      <a id = "back-to-top" href = "#" onclick = "backToTop()">Back to top</a>
+
       <div class="wrapper">
         {{ content }}
       </div>

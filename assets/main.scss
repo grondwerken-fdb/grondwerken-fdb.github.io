@@ -1,10 +1,26 @@
 ---
 ---
 
+$content-width: 80%;
+
 @import "minima";
 
 body {
     // background-color:  #d5f5e3 ;
+}
+
+#back-to-top {
+    position: absolute;
+    top: 80%;
+    left: 4.5%;
+    transition: color ease 0.5s, border ease 0.5s;
+    color: white;
+
+    border-radius: 10px;
+    border-color: #1756a9;
+    border-width: 2px;
+    border-style: solid;
+    padding: .5%;
 }
 
 .social-media-list {
@@ -23,14 +39,26 @@ body {
 	padding-bottom: 0px;
 }
 
-a.site-title site-title-fdb, a.site-title:visited site-title-fdb{
+.site-title.site-title {
 	color: yellow;
+    margin-left: 10%;
 }
 
 .site-header {
-	background-color: green;
-	text-color: yellow;	
-	border-bottom: unset !important;
+	border: unset !important;
+}
+
+.site-header > .wrapper {
+    background-image: linear-gradient(to right, white,green, green, green, green, green, white);
+    padding: 0;
+}
+
+.page-content > .wrapper {
+    padding-left: 10%;
+}
+
+.site-nav {
+    padding-right: 10%;
 }
 
 .archive_img {
@@ -43,7 +71,12 @@ a.site-title site-title-fdb, a.site-title:visited site-title-fdb{
     padding-right: 10px;
 }
 
-@media screen and (min-width: 600px) {
+.page-link.active-page {
+    text-decoration: underline;
+    color: yellow;
+}
+
+@media screen and (min-width: 600px) { // Only apply this to screens with minimum width of 600px
 
     .page-link {
         position: relative;
@@ -76,7 +109,6 @@ a.site-title site-title-fdb, a.site-title:visited site-title-fdb{
     font-size: 20px;
 }
 
-
 .footer-col {
     margin-bottom: 1px;
 }
@@ -93,4 +125,15 @@ a.site-title site-title-fdb, a.site-title:visited site-title-fdb{
 .post-meta * {
     font-size: 14px;
     color: #828282;
+}
+
+.logo {
+    position: absolute;
+    z-index: 100;
+    width: 10%;
+    height: auto;
+}
+
+.logo:hover {
+    bottom: -20px;
 }

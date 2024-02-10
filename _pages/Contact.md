@@ -2,6 +2,7 @@
 layout: page
 title: Contact
 permalink: /Contact
+order: 2
 ---
 
 ### Adres:

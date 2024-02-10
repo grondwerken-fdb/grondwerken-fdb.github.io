@@ -46,8 +46,8 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { max-width: -webkit-calc(80% - (30px * 2)); max-width: calc(80% - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(80% - (30px)); max-width: calc(80% - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
@@ -195,19 +195,29 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
+#back-to-top { position: absolute; top: 80%; left: 4.5%; transition: color ease 0.5s, border ease 0.5s; color: white; border-radius: 10px; border-color: #1756a9; border-width: 2px; border-style: solid; padding: .5%; }
+
 .social-media-list { margin: 0; }
 
 .rule { color: gray; border: 0; border-top: 1px solid; height: 1px; }
 
 .site-footer { border: unset !important; padding-bottom: 0px; }
 
-a.site-title site-title-fdb, a.site-title:visited site-title-fdb { color: yellow; }
+.site-title.site-title { color: yellow; margin-left: 10%; }
 
-.site-header { background-color: green; text-color: yellow; border-bottom: unset !important; }
+.site-header { border: unset !important; }
+
+.site-header > .wrapper { background-image: linear-gradient(to right, white, green, green, green, green, green, white); padding: 0; }
+
+.page-content > .wrapper { padding-left: 10%; }
+
+.site-nav { padding-right: 10%; }
 
 .archive_img { width: inherit; }
 
 .page-link { margin-right: 0 !important; padding-left: 10px; padding-right: 10px; }
+
+.page-link.active-page { text-decoration: underline; color: yellow; }
 
 @media screen and (min-width: 600px) { .page-link { position: relative; bottom: 0; display: inline-block; line-height: inherit !important; transition: bottom ease 0.5s; }
   .page-link:hover { bottom: -10px; color: yellow; } }
@@ -224,3 +234,7 @@ a.site-title site-title-fdb, a.site-title:visited site-title-fdb { color: yellow
 .project-img { width: 75%; display: block; margin-left: auto; margin-right: auto; height: auto; margin-bottom: 1%; }
 
 .post-meta * { font-size: 14px; color: #828282; }
+
+.logo { position: absolute; z-index: 100; width: 10%; height: auto; }
+
+.logo:hover { bottom: -20px; }
