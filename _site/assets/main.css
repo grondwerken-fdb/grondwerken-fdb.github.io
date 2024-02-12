@@ -195,7 +195,7 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-#back-to-top { position: absolute; top: 80%; left: 4.5%; transition: color ease 0.5s, border ease 0.5s; color: white; border-radius: 10px; border-color: #1756a9; border-width: 2px; border-style: solid; padding: .5%; }
+#back-to-top { position: absolute; top: 80%; left: 4.5%; transition: color ease 0.5s, border ease 0.5s; color: white; border-radius: 10px; border-color: white; border-width: 2px; border-style: solid; padding: .5%; }
 
 .social-media-list { margin: 0; }
 
@@ -209,7 +209,7 @@ table td { border: 1px solid #e8e8e8; }
 
 .site-header > .wrapper { background-image: linear-gradient(to right, white, green, green, green, green, green, white); padding: 0; }
 
-.page-content > .wrapper { padding-left: 10%; }
+.page-content > .wrapper { width: 70%; }
 
 .site-nav { padding-right: 10%; }
 
@@ -235,6 +235,6 @@ table td { border: 1px solid #e8e8e8; }
 
 .post-meta * { font-size: 14px; color: #828282; }
 
-.logo { position: absolute; z-index: 100; width: 10%; height: auto; }
+.logo { position: absolute; z-index: 100; width: calc(max(10%, 100px)); height: auto; }
 
 .logo:hover { bottom: -20px; }

@@ -17,7 +17,7 @@ body {
     color: white;
 
     border-radius: 10px;
-    border-color: #1756a9;
+    border-color: white;
     border-width: 2px;
     border-style: solid;
     padding: .5%;
@@ -54,8 +54,9 @@ body {
 }
 
 .page-content > .wrapper {
-    padding-left: 10%;
+    width: 70%;
 }
+
 
 .site-nav {
     padding-right: 10%;
@@ -130,7 +131,7 @@ body {
 .logo {
     position: absolute;
     z-index: 100;
-    width: 10%;
+    width: calc(max(10%, 100px));
     height: auto;
 }
 
