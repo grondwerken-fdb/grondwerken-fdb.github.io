@@ -1,6 +1,19 @@
-Grondwerken Frank DE BACKER staat in voor al uw grondwerken:
-- aanleg en heraanleg van opritten
-- aanleg en heraanleg van tuinen
-- plaatsen en verplaatsen van containers
-- wegvoeren van afbraakmateriaal
+Met zijn jarenlange ervaring staat Frank DE BACKER in voor al uw grondwerken:
+
+- (her)aanleg van opritten en terrassen
+
+- voorbereidende grondwerken tuinaanleg
+
+- plaatsen van tuinafsluitingen
+
+- plaatsen van containers
+
+- rioleringswerken
+
+- plaatsen van septische en regenwaterputten
+
+- funderingswerken
+
+- uitscheppen van woningen
+
 - ...
