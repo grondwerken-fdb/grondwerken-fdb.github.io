@@ -5,11 +5,9 @@
   window.addEventListener("scroll",
       function () {
         if(window.pageYOffset > 0) {
-          document.getElementById("back-to-top").style.color = "#1756a9";
-          document.getElementById("back-to-top").style.borderColor = "#1756a9";
+          document.getElementById("back-to-top").style.opacity = 1;
         } else {
-          document.getElementById("back-to-top").style.color = "white";
-          document.getElementById("back-to-top").style.borderColor = "white";
+          document.getElementById("back-to-top").style.opacity = 0;
         }
         document.getElementById("back-to-top").style.top = Math.min(
           0.8 * window.innerHeight + window.pageYOffset,
@@ -27,13 +25,11 @@
 
   <body>
 
-    <img class = "logo" src = "/assets/images/FDB_LOGO_Large_cr.jpg"/>
-
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
 
-      <a id = "back-to-top" href = "#" onclick = "backToTop()">Back to top</a>
+      <a id = "back-to-top" href = "#" onclick = "backToTop()"><i class="fa fa-fw fa-angle-double-up"></i> Naar boven</a>
 
       <div class="wrapper">
         {{ content }}

@@ -5,11 +5,9 @@
   window.addEventListener("scroll",
       function () {
         if(window.pageYOffset > 0) {
-          document.getElementById("back-to-top").style.color = "#1756a9";
-          document.getElementById("back-to-top").style.borderColor = "#1756a9";
+          document.getElementById("back-to-top").style.opacity = 1;
         } else {
-          document.getElementById("back-to-top").style.color = "white";
-          document.getElementById("back-to-top").style.borderColor = "white";
+          document.getElementById("back-to-top").style.opacity = 0;
         }
         document.getElementById("back-to-top").style.top = Math.min(
           0.8 * window.innerHeight + window.pageYOffset,
@@ -41,11 +39,11 @@
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Grondwerken Frank De Backer" /><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
-<body>
+<body><header class="site-header" role="banner">
 
-    <img class = "logo" src = "/assets/images/FDB_LOGO_Large_cr.jpg"/><header class="site-header" role="banner">
+  <div class="wrapper">
 
-  <div class="wrapper"><a class="site-title" rel="author" href="/">Grondwerken Frank De Backer</a><nav class="site-nav">
+    <img class = "logo" src = "/assets/images/FDB_LOGO_Large_cr.jpg"/><a class="site-title" rel="author" href="/">Grondwerken Frank De Backer</a><nav class="site-nav">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger">
           <span class="menu-icon">
@@ -65,7 +63,7 @@
       </nav></div>
 </header><main class="page-content" aria-label="Content">
 
-      <a id = "back-to-top" href = "#" onclick = "backToTop()">Back to top</a>
+      <a id = "back-to-top" href = "#" onclick = "backToTop()"><i class="fa fa-fw fa-angle-double-up"></i> Naar boven</a>
 
       <div class="wrapper">
         <article class="post">
@@ -75,23 +73,68 @@
   </header>
 
   <div class="post-content">
-    <h3 id="adres">Adres:</h3>
+    <script lang = "javascript">
 
-<p>Strooiendorp 25, 9940 Evergem</p>
+  function submission() {
+    console.log("TEST");
+  }
 
-<h3 id="contactgegevens">Contactgegevens:</h3>
+</script>
 
-<ol>
-  <li>Telefoon: 09 372 06 32</li>
-  <li>GSM: 0477 610 723</li>
-</ol>
+<div id = "address-box">
 
+  <div>
+    <h3>Adres:</h3>
+    Strooiendorp 25, 9940 Evergem
+
+    <br><br><br>
+
+    <h3>Contactgegevens:</h3>
+    
+    <ul style = "margin-bottom: 0">
+      <li>GSM: 0477 610 723</li>
+      <li>Mail: <a class="u-email" href="mailto:frank_de_backer@telenet.be">frank_de_backer@telenet.be</a></li>
+    </ul>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14165.25777098193!2d3.6639546693118668!3d51.12529006068285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37aa77f6aaa5f%3A0x77a113e0dcf93d6c!2sStrooiendorp%2025%2C%209940%20Evergem!5e0!3m2!1sen!2sbe!4v1708795331929!5m2!1sen!2sbe" style="border:0; width: 40vw; height: 50vh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+<br><br>
+
+
+
+
+
+  <div class = "notification-box" style = "margin-left: auto; margin-right: auto;">
+    <h3><u>Mededeling:</u></h3>
+    <p>Wij zijn er eventjes niet van 29/02 tot 03/03.</p>
+  </div>
+
+
+
+
+  <!-- <form class = "contact-form" action = "javascript:test()">
+    <div class = "contact-form-block">
+      <label for = "email">E-mail</label>
+      <input type = "email" id = "email" class = "contact-form-child"/>
+    </div>
+    <div class = "contact-form-block">
+      <label for = "message">Bericht</label>
+      <textarea type = "text" id = "message" style = "width: 50%; vertical-align: top;" rows = 5 class = "contact-form-child"></textarea>
+    </div>
+    <br><br>
+    <input type = "submit" value = "Verzend"/>
+  </form> -->
   </div>
 
 </article>
 
       </div>
-    </main><footer class="site-footer h-card">
+    </main>
+
+<footer class="site-footer h-card">
   <data class="u-url" href="/"></data>
 
   <hr style = "margin-bottom: 1vh">
@@ -103,12 +146,15 @@
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
-          <li class="p-name">Frank De Backer</li><li><i class="fa fa-fw fa-map-marker"></i> 9940 Evergem, Strooiendorp 25</li><li><i class="fa fa-fw fa-phone"></i> 09 372 06 32</li><li><i class="fa fa-fw fa-mobile"></i> 0477 610 723</li><li><i class="fa fa-fw fa-envelope"></i> <a class="u-email" href="mailto:frank_de_backer@telenet<b>telenet</b>.be">frank_de_backer@telenet<b>telenet</b>.be</a></li></ul>
+          <li class="p-name">Frank De Backer</li><li><i class="fa fa-fw fa-map-marker"></i> Strooiendorp 25, 9940 Evergem</li><li><i class="fa fa-fw fa-mobile"></i> 0477 610 723</li><li><i class="fa fa-fw fa-envelope"></i> <a class="u-email" href="mailto:frank_de_backer@telenet.be">frank_de_backer@telenet.be</a></li></ul>
       </div>
       <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
 </div>
       <div class="footer-col footer-col-3">
-        <p>Bel of mail ons of stuur ons een bericht via het formulier op onze <a href = "Contact">contactpagina</a>.</p>
+        <p>Bel of mail ons of stuur ons een bericht via het formulier op onze <a href = "/Contact">contactpagina</a>.</p>
+        
+          <p><u style = "font-size: 14pt">Mededeling:</u> Wij zijn er eventjes niet van 29/02 tot 03/03.</p>
+        
       </div>
     </div>
 

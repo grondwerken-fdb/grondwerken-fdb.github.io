@@ -4,19 +4,60 @@ order: 0
 title: Wie zijn wij ?
 ---
 
-<span style = "width: 49%; display: inline-block; vertical-align: middle;">
+<span style = "width: 40%; display: inline-block; vertical-align: top; margin-right: 5%;">
 
 {% capture welkom %}
-{% include WelkomTekst.md %}
+    {%- include WelkomstTekst.md -%}
 {% endcapture %}
-{{ welkom | markdownify }}
+{{- welkom | markdownify -}}
 
 </span>
 
-<span style = "width: 49%; display: inline-block; vertical-align: middle;">
+<span style = "width: 54%; display: inline-block; vertical-align: top;">
 
-    <img src = "assets\images\2021-09-28_OUDENAARDE_Heraanleg voor- en zijtuin\2021-09-28_12-03-13_OUDENAARDE_Heraanleg voor- en zijtuin.jpg"/>
+{% capture mededeling %}
+    {%- include Mededeling.md -%}
+{% endcapture %}
+{% if mededeling != "" %}
+    <div class = "notification-box">
+        <h2><u>Mededeling:</u></h2>
+        {{- mededeling | markdownify -}}
+    </div>
+{% endif %}
+
+    <div id = "cycle-box">
+        <div class = "cycler" id = "cycle-left" onclick="back()"><i class = "fa fa-fw fa-angle-double-left"></i></div>
+        <img id = "image-cycle" src = "">
+        <div class = "cycler" id = "cycle-right" onclick="cycle()"><i class = "fa fa-fw fa-angle-double-right"></i></div>
+    </div>
 
     Indien u meer foto's wil zien, nodigen wij u uit om ons <a href = "{{ site.baseurl }}Realisaties">overzicht</a> van realisaties en projecten te bekijken.
 
 </span>
+
+<script type = "text/javascript">
+
+    var imgs = [];
+
+    {% assign paths = site.static_files | map: "path" %}
+    {% for path in paths %}
+        {% if path contains "/index/" %}
+            imgs.push("{{path}}");
+        {% endif %}
+    {% endfor %}
+
+    var cnt = 0;
+    document.getElementById("image-cycle").src = imgs[cnt];
+
+    function cycle() {
+        cnt = (cnt + 1) % imgs.length;
+        document.getElementById("image-cycle").src = imgs[cnt];
+    }
+
+    function back() {
+        cnt = (imgs.length + cnt - 1) % imgs.length;
+        document.getElementById("image-cycle").src = imgs[cnt];
+    }
+
+    window.onload = function () { setInterval(cycle, 3000) };
+</script>

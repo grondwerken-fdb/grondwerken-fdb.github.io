@@ -1,3 +1,7 @@
+{% capture mededeling %}
+{%- include Mededeling.md -%}
+{% endcapture %}
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
@@ -20,7 +24,7 @@
 
             {%- if site.city -%}
               {%- if site.address -%}
-                <li><i class="fa fa-fw fa-map-marker"></i> {{ site.city }}, {{site.address}}</li>
+                <li><i class="fa fa-fw fa-map-marker"></i> {{site.address}}, {{ site.city }}</li>
               {%- endif -%}
             {%- endif -%}
 
@@ -42,6 +46,9 @@
       </div>
       <div class="footer-col footer-col-3">
         <p>{%- include BeschrijvingFooter.md -%}</p>
+        {% if mededeling != "" %}
+          <p><u style = "font-size: 14pt">Mededeling:</u> {{ mededeling }}</p>
+        {% endif %}
       </div>
     </div>
 

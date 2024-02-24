@@ -1,6 +1,6 @@
 import os
 
-select = os.listdir("./assets/images")
+select = os.listdir("./assets/projects")
 
 for folder in select:
     # if not os.path.exists("./_projects/" + folder + ".md"):
