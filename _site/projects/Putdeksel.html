@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <script lang="javascript">
-  window.addEventListener("scroll",
-      function () {
-        if(window.pageYOffset > 0) {
-          document.getElementById("back-to-top").style.opacity = 1;
-        } else {
-          document.getElementById("back-to-top").style.opacity = 0;
-        }
-        document.getElementById("back-to-top").style.top = Math.min(
-          0.8 * window.innerHeight + window.pageYOffset,
-          document.getElementsByClassName("site-footer h-card")[0].offsetTop - 0.1 * window.innerHeight
-        ) + "px";
-      }
-  );
+
+  function scroll() {
+    if(window.pageYOffset > 0) {
+      document.getElementById("back-to-top").style.opacity = 1;
+    } else {
+      document.getElementById("back-to-top").style.opacity = 0;
+    }
+    document.getElementById("back-to-top").style.top = Math.min(
+      0.8 * window.innerHeight + window.pageYOffset,
+      document.getElementsByClassName("site-footer h-card")[0].offsetTop - 0.1 * window.innerHeight
+    ) + "px";
+
+    document.getElementById("scroll-bar").style.width = (100 * window.pageYOffset / (document.body.scrollHeight - window.innerHeight)) + "%";
+  }
 
   function backToTop() {
     window.scrollBy(0, -window.pageYOffset);
   }
+
+  window.addEventListener("scroll", scroll);
+  window.onload = scroll;
+
 </script><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -136,12 +141,14 @@
 </article>
 
       </div>
+
     </main>
 
 <footer class="site-footer h-card">
-  <data class="u-url" href="/"></data>
+  <!-- <data class="u-url" href="/"></data> -->
 
-  <hr style = "margin-bottom: 1vh">
+  <hr id = "scroll-bar">
+  <hr id = footer-line>
   <div class="wrapper">
 
     <!-- <h2 class="footer-heading">Grondwerken Frank De Backer</h2> -->

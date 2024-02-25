@@ -27,6 +27,8 @@ address: Strooiendorp 25
 mobile: 0477 610 723
 email: frank_de_backer@telenet.be
 description: >- # this means to ignore newlines until next tag
+
+lang: "nl"
   
 baseurl: "" # the subpath of your site, e.g. /blog
 

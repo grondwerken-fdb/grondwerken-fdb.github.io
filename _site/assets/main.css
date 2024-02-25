@@ -46,8 +46,8 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(75% - (30px * 2)); max-width: calc(75% - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(75% - (30px)); max-width: calc(75% - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { max-width: -webkit-calc(800px - (30px * 2)); max-width: calc(800px - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(800px - (30px)); max-width: calc(800px - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
@@ -206,10 +206,8 @@ table td { border: 1px solid #e8e8e8; }
 .site-nav { margin-left: 20%; float: left; }
 
 .site-header { border: unset !important; }
-
-.site-header > .wrapper { background-image: linear-gradient(to right, white, green, green, green, green, green, white); padding: 0; position: relative; width: 100%; max-width: 100%; height: auto; }
-
 .site-header .site-title { color: yellow; margin-left: calc(max(20%, 130px)); }
+.site-header > .wrapper { background-image: linear-gradient(to right, white, green, green, green, green, green, white); padding: 0; position: relative; width: 100%; max-width: 100%; height: auto; }
 
 .page-content > .wrapper { padding: 0; margin-left: calc((100% - 75%) / 2); margin-right: calc((100% - 75%) / 2); max-width: 100%; }
 
@@ -218,8 +216,7 @@ table td { border: 1px solid #e8e8e8; }
 .archive_img { width: inherit; }
 
 .page-link { margin-right: 0 !important; padding-left: 10px; padding-right: 10px; }
-
-.page-link.active-page { text-decoration: underline; color: yellow; }
+.page-link .active-page { text-decoration: underline; color: yellow; }
 
 .logo { position: absolute; z-index: 100; height: inherit; left: 0; height: 60px; }
 
@@ -244,7 +241,6 @@ table td { border: 1px solid #e8e8e8; }
 .contact-form-child { position: absolute; left: 10%; }
 
 .notification-box { border-color: red; border-radius: 5px; border-style: solid; border-width: 2px; background-color: rgba(255, 0, 0, 0.1); margin-bottom: 5vh; max-width: 50vw; }
-
 .notification-box > * { margin-left: 15px; margin-right: 15px; }
 
 #cycle-box { position: relative; }
@@ -258,3 +254,7 @@ table td { border: 1px solid #e8e8e8; }
 #cycle-right { right: 2%; }
 
 #address-box { display: grid; grid-template-columns: 1fr 1fr; }
+
+#footer-line { margin-bottom: 1vh; }
+
+#scroll-bar { background-color: red; border-color: red; border-style: solid; position: fixed; height: 5px; left: 0px; bottom: 0px; display: none; }

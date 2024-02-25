@@ -1,13 +1,9 @@
 ---
 ---
 
-$content-width: 75%;
-
 @import "minima";
 
-body {
-    // background-color:  #d5f5e3 ;
-}
+$content-width: 75%;
 
 #back-to-top {
     position: absolute;
@@ -49,20 +45,20 @@ body {
 
 .site-header {
 	border: unset !important;
-}
 
-.site-header > .wrapper {
-    background-image: linear-gradient(to right, white,green, green, green, green, green, white);
-    padding: 0;
-    position: relative;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-}
+    .site-title {
+        color: yellow;
+        margin-left: calc(max(20%, 130px));
+    }
 
-.site-header .site-title {
-	color: yellow;
-    margin-left: calc(max(20%, 130px));
+    > .wrapper {
+        background-image: linear-gradient(to right, white,green, green, green, green, green, white);
+        padding: 0;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .page-content > .wrapper {
@@ -86,11 +82,11 @@ body {
     margin-right: 0 !important;
     padding-left: 10px;
     padding-right: 10px;
-}
 
-.page-link.active-page {
-    text-decoration: underline;
-    color: yellow;
+    .active-page {
+        text-decoration: underline;
+        color: yellow;
+    }
 }
 
 .logo {
@@ -180,11 +176,11 @@ body {
     margin-bottom: 5vh;
 
     max-width: 50vw;
-}
 
-.notification-box > * {
-    margin-left: 15px;
-    margin-right: 15px;
+    > * {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
 }
 
 #cycle-box {
@@ -230,4 +226,21 @@ body {
 #address-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+#footer-line {
+    margin-bottom: 1vh;
+}
+
+#scroll-bar {
+    background-color: red;
+    border-color: red;
+    border-style: solid;
+
+    position: fixed;
+    height: 5px;
+    left: 0px;
+    bottom: 0px;
+
+    display: none;
 }
