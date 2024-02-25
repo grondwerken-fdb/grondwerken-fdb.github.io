@@ -46,8 +46,8 @@ pre { padding: 8px 12px; overflow-x: auto; }
 pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 /** Wrapper */
-.wrapper { max-width: -webkit-calc(80% - (30px * 2)); max-width: calc(80% - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
-@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(80% - (30px)); max-width: calc(80% - (30px)); padding-right: 15px; padding-left: 15px; } }
+.wrapper { max-width: -webkit-calc(75% - (30px * 2)); max-width: calc(75% - (30px * 2)); margin-right: auto; margin-left: auto; padding-right: 30px; padding-left: 30px; }
+@media screen and (max-width: 800px) { .wrapper { max-width: -webkit-calc(75% - (30px)); max-width: calc(75% - (30px)); padding-right: 15px; padding-left: 15px; } }
 
 /** Clearfix */
 .wrapper:after, .footer-col-wrapper:after { content: ""; display: table; clear: both; }
@@ -195,7 +195,7 @@ table td { border: 1px solid #e8e8e8; }
 .highlight .vi { color: #008080; }
 .highlight .il { color: #099; }
 
-#back-to-top { position: absolute; top: 80%; left: 4.5%; transition: color ease 0.5s, border ease 0.5s; color: white; border-radius: 10px; border-color: white; border-width: 2px; border-style: solid; padding: .5%; }
+#back-to-top { position: absolute; top: 80%; right: 2%; padding: .5%; transition: opacity ease 0.5s; opacity: 0; color: #1756a9; border-radius: 10px; border-color: #1756a9; border-width: 2px; border-style: solid; }
 
 .social-media-list { margin: 0; }
 
@@ -203,15 +203,17 @@ table td { border: 1px solid #e8e8e8; }
 
 .site-footer { border: unset !important; padding-bottom: 0px; }
 
-.site-title.site-title { color: yellow; margin-left: 10%; }
+.site-nav { margin-left: 20%; float: left; }
 
 .site-header { border: unset !important; }
 
-.site-header > .wrapper { background-image: linear-gradient(to right, white, green, green, green, green, green, white); padding: 0; }
+.site-header > .wrapper { background-image: linear-gradient(to right, white, green, green, green, green, green, white); padding: 0; position: relative; width: 100%; max-width: 100%; height: auto; }
 
-.page-content > .wrapper { width: 70%; }
+.site-header .site-title { color: yellow; margin-left: calc(max(20%, 130px)); }
 
-.site-nav { padding-right: 10%; }
+.page-content > .wrapper { padding: 0; margin-left: calc((100% - 75%) / 2); margin-right: calc((100% - 75%) / 2); max-width: 100%; }
+
+.wrapper li p { margin-left: 10px; margin-bottom: 5px; }
 
 .archive_img { width: inherit; }
 
@@ -219,11 +221,13 @@ table td { border: 1px solid #e8e8e8; }
 
 .page-link.active-page { text-decoration: underline; color: yellow; }
 
+.logo { position: absolute; z-index: 100; height: inherit; left: 0; height: 60px; }
+
 @media screen and (min-width: 600px) { .page-link { position: relative; bottom: 0; display: inline-block; line-height: inherit !important; transition: bottom ease 0.5s; }
   .page-link:hover { bottom: -10px; color: yellow; } }
+@media screen and (max-width: 600px) { .page-link { color: black !important; }
+  .page-content .wrapper { margin-left: 25%; } }
 .u-email { color: #2a7ae2; }
-
-.u-email b { display: none; }
 
 #lang_nl { padding-right: 10px; }
 
@@ -231,10 +235,26 @@ table td { border: 1px solid #e8e8e8; }
 
 .footer-col { margin-bottom: 1px; }
 
-.project-img { width: 75%; display: block; margin-left: auto; margin-right: auto; height: auto; margin-bottom: 1%; }
+.project-img { width: 75%; display: block; margin-left: auto; margin-right: auto; height: auto; margin-bottom: 2%; }
 
 .post-meta * { font-size: 14px; color: #828282; }
 
-.logo { position: absolute; z-index: 100; width: calc(max(10%, 100px)); height: auto; }
+.contact-form { position: relative; }
 
-.logo:hover { bottom: -20px; }
+.contact-form-child { position: absolute; left: 10%; }
+
+.notification-box { border-color: red; border-radius: 5px; border-style: solid; border-width: 2px; background-color: rgba(255, 0, 0, 0.1); margin-bottom: 5vh; max-width: 50vw; }
+
+.notification-box > * { margin-left: 15px; margin-right: 15px; }
+
+#cycle-box { position: relative; }
+
+.cycler { border-style: solid; border-radius: 50%; border-width: 1px; position: absolute; background-color: rgba(255, 255, 255, 0.7); top: 50%; transform: translateY(-50%); width: 20px; height: 20px; display: flex; justify-content: center; align-items: center; }
+
+.cycler:hover { border-width: 2px; width: 25px; height: 25px; cursor: pointer; border-color: yellow; }
+
+#cycle-left { left: 2%; }
+
+#cycle-right { right: 2%; }
+
+#address-box { display: grid; grid-template-columns: 1fr 1fr; }

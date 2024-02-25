@@ -12,6 +12,8 @@ Met zijn jarenlange ervaring staat Frank DE BACKER in voor al uw grondwerken:
 
 - plaatsen van septische en regenwaterputten
 
+- plaatsen van infiltratieputten
+
 - funderingswerken
 
 - uitscheppen van woningen

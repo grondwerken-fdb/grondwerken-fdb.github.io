@@ -24,7 +24,7 @@ layout: default
   </div>
   
   {% for item in site.static_files %}
-    {% if item.path contains page.link and item.path contains "images/" %}
+    {% if item.path contains page.link and item.path contains "projects/" %}
       <img class = "project-img" src = "{{item.path}}"/>
     {% endif %}
   {% endfor %}

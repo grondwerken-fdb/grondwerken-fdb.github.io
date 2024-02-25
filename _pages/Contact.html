@@ -1,0 +1,66 @@
+---
+layout: page
+title: Contact
+permalink: /Contact
+order: 2
+---
+
+<script lang = "javascript">
+
+  function submission() {
+    console.log("TEST");
+  }
+
+</script>
+
+<div id = "address-box">
+
+  <div>
+    <h3>Adres:</h3>
+    {{site.address}}, {{site.city}}
+
+    <br><br><br>
+
+    <h3>Contactgegevens:</h3>
+    
+    <ul style = "margin-bottom: 0">
+      {%- if site.tel -%}
+      <li>Telefoon: {{site.tel}}</li>
+      {% endif %}
+      <li>GSM: {{site.mobile}}</li>
+      <li>Mail: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+    </ul>
+  </div>
+
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14165.25777098193!2d3.6639546693118668!3d51.12529006068285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37aa77f6aaa5f%3A0x77a113e0dcf93d6c!2sStrooiendorp%2025%2C%209940%20Evergem!5e0!3m2!1sen!2sbe!4v1708795331929!5m2!1sen!2sbe" style="border:0; width: 40vw; height: 50vh" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+<br><br>
+
+{% capture mededeling %}
+{%- include Mededeling.md -%}
+{% endcapture %}
+
+{% if mededeling != "" %}
+
+  <div class = "notification-box" style = "margin-left: auto; margin-right: auto;">
+    <h3><u>Mededeling:</u></h3>
+    <p>{{ mededeling }}</p>
+  </div>
+
+{% endif %}
+
+
+  <!-- <form class = "contact-form" action = "javascript:test()">
+    <div class = "contact-form-block">
+      <label for = "email">E-mail</label>
+      <input type = "email" id = "email" class = "contact-form-child"/>
+    </div>
+    <div class = "contact-form-block">
+      <label for = "message">Bericht</label>
+      <textarea type = "text" id = "message" style = "width: 50%; vertical-align: top;" rows = 5 class = "contact-form-child"></textarea>
+    </div>
+    <br><br>
+    <input type = "submit" value = "Verzend"/>
+  </form> -->
