@@ -23,9 +23,21 @@ layout: default
     {{ content }}
   </div>
   
+
   {% for item in site.static_files %}
     {% if item.path contains page.link and item.path contains "projects/" %}
-      <img class = "project-img" src = "{{item.path}}"/>
+        {% if item.path contains ".jpg" %}
+          <div class = "project-box">
+            {% assign file = site.projects | where_exp: "file", "file.path contains item.basename" | first %}
+            {% if file %}
+              <p class = "project-text">{{- file.content -}}</p>
+              <img class = "project-img" src = "{{item.path}}">
+            {% else %}
+              <img src = "{{item.path}}">
+            {% endif %}
+            
+          </div>
+        {% endif %}
     {% endif %}
   {% endfor %}
 

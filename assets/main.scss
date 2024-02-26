@@ -142,13 +142,42 @@ $content-width: 75%;
     margin-bottom: 1px;
 }
 
-.project-img {
+.project-box {
+    position: relative;
+    top: 0;
+    left: 0;
+
     width: 75%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     height: auto;
     margin-bottom: 2%;
+
+    .project-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-bottom: 0;
+
+        transition: opacity ease 1s;
+        opacity: 0;
+    }
+
+    .project-img {
+        transition: transform ease 1s, opacity ease 1s;
+
+        margin-bottom: 0;
+    }
+
+    &:hover .project-text {
+        opacity: 1;
+    }
+
+    &:hover .project-img {
+        transform: translateX(10%);
+        opacity: 0.2;
+    }
 }
 
 .post-meta * {
