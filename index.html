@@ -42,7 +42,7 @@ title: Wie ben ik ?
     {% assign paths = site.static_files | map: "path" %}
     {% for path in paths %}
         {% if path contains "/index/" %}
-            imgs.push("{{site.baseurl}}{{path}}");
+            imgs.push("{{path}}");
         {% endif %}
     {% endfor %}
 
