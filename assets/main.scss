@@ -166,7 +166,7 @@ $content-width: 75%;
 
     .project-img {
         transition: transform ease 1s, opacity ease 1s;
-
+        transition-delay: .5s;
         margin-bottom: 0;
     }
 

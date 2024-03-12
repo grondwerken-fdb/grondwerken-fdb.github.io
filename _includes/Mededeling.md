@@ -1,1 +1,1 @@
-Wij zijn er eventjes niet van 29/02 tot 03/03.
+Deze site is nog in opbouw.

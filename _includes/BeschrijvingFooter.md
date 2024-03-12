@@ -1,1 +1,1 @@
-Bel of mail ons of stuur ons een bericht via het formulier op onze <a href = "{{site.baseurl}}/Contact">contactpagina</a>.
+Bel of mail ons via de contactgegevens op onze <a href = "{{site.baseurl}}/Contact">contactpagina</a>.

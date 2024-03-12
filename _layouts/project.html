@@ -31,7 +31,7 @@ layout: default
             {% assign file = site.projects | where_exp: "file", "file.path contains item.basename" | first %}
             {% if file %}
               <p class = "project-text">{{- file.content -}}</p>
-              <img class = "project-img" src = "{{item.path}}">
+              <img class = "project-img" src = "{{item.path}}" alt = "{{- file.content -}}">
             {% else %}
               <img src = "{{item.path}}">
             {% endif %}

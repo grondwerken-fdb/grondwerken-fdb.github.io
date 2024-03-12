@@ -1,4 +1,6 @@
-Met zijn jarenlange ervaring staat Frank DE BACKER in voor al uw grondwerken:
+<img src = "/assets/images/Frank.jpg" style = "width: 30%;margin-right: 10%">Ik ben Frank DE BACKER.
+
+Met mijn jarenlange ervaring sta ik in voor al uw grondwerken:
 
 - (her)aanleg van opritten en terrassen
 
