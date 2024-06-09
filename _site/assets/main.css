@@ -220,10 +220,6 @@ table td { border: 1px solid #e8e8e8; }
 
 .logo { position: absolute; z-index: 100; height: inherit; left: 0; height: 60px; }
 
-@media screen and (min-width: 600px) { .page-link { position: relative; bottom: 0; display: inline-block; line-height: inherit !important; transition: bottom ease 0.5s; }
-  .page-link:hover { bottom: -10px; color: yellow; } }
-@media screen and (max-width: 600px) { .page-link { color: black !important; }
-  .page-content .wrapper { margin-left: 25%; } }
 .u-email { color: #2a7ae2; }
 
 #lang_nl { padding-right: 10px; }
@@ -262,3 +258,13 @@ table td { border: 1px solid #e8e8e8; }
 #footer-line { margin-bottom: 1vh; }
 
 #scroll-bar { background-color: red; border-color: red; border-style: solid; position: fixed; height: 5px; left: 0px; bottom: 0px; display: none; }
+
+.main-content { display: grid; }
+.main-content .left { grid-column-start: 1; }
+.main-content .right { grid-column-start: 2; }
+
+@media screen and (min-width: 600px) { .page-link { position: relative; bottom: 0; display: inline-block; line-height: inherit !important; transition: bottom ease 0.5s; }
+  .page-link:hover { bottom: -10px; color: yellow; } }
+@media screen and (max-width: 600px) { .page-link { color: black !important; }
+  .page-content .wrapper { margin-left: 25%; } }
+@media (max-width: 800px) { .main-content .right { grid-column-start: 1; } }

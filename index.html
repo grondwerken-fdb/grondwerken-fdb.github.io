@@ -4,16 +4,18 @@ order: 0
 title: Wie ben ik ?
 ---
 
-<span style = "width: 40%; display: inline-block; vertical-align: top; margin-right: 5%;">
+<div class = "main-content">
+
+<div class = "left">
 
 {% capture welkom %}
     {%- include WelkomstTekst.md -%}
 {% endcapture %}
 {{- welkom | markdownify -}}
 
-</span>
+</div>
 
-<span style = "width: 54%; display: inline-block; vertical-align: top;">
+<div class = "right">
 
 {% capture mededeling %}
     {%- include Mededeling.md -%}
@@ -33,7 +35,9 @@ title: Wie ben ik ?
 
     Indien u meer foto's wil zien, nodigen wij u uit om ons <a href = "{{ site.baseurl }}Realisaties">overzicht</a> van realisaties en projecten te bekijken.
 
-</span>
+</div>
+
+</div>
 
 <script type = "text/javascript">
 

@@ -97,34 +97,6 @@ $content-width: 75%;
     height: 60px;
 }
 
-@media screen and (min-width: 600px) { // Only apply this to screens with minimum width of 600px
-
-    .page-link {
-        position: relative;
-        bottom: 0;
-        display: inline-block;
-        line-height: inherit !important;
-        transition: bottom ease 0.5s;
-    }
-
-    .page-link:hover {
-        bottom: -10px;
-		color: yellow;
-	}
-
-}
-
-@media screen and (max-width: 600px) {
-
-    .page-link {
-        color: black !important;
-    }
-
-    .page-content .wrapper {
-        margin-left: 25%;
-    }
-}
-
 
 .u-email {
     color: #2a7ae2;
@@ -272,4 +244,50 @@ $content-width: 75%;
     bottom: 0px;
 
     display: none;
+}
+
+.main-content {
+    display: grid;
+
+    .left {
+        grid-column-start: 1;
+    }
+
+    .right {
+        grid-column-start: 2;
+    }
+}
+
+@media screen and (min-width: 600px) { // Only apply this to screens with minimum width of 600px
+
+    .page-link {
+        position: relative;
+        bottom: 0;
+        display: inline-block;
+        line-height: inherit !important;
+        transition: bottom ease 0.5s;
+    }
+
+    .page-link:hover {
+        bottom: -10px;
+		color: yellow;
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .page-link {
+        color: black !important;
+    }
+
+    .page-content .wrapper {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-content .right {
+        grid-column-start: 1;
+    }
 }
