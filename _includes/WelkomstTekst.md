@@ -1,4 +1,11 @@
-<img src = "/assets/images/Frank.jpg" style = "width: 30%;margin-right: 10%">Ik ben Frank DE BACKER.
+<div class = "dp-box">
+    <div class = "left">
+        <img src = "/assets/images/Frank.jpg" class = "dp">
+    </div>
+    <div class = "right">
+        Ik ben Frank DE BACKER.
+    </div>
+</div>
 
 Met mijn jarenlange ervaring sta ik in voor al uw grondwerken:
 
