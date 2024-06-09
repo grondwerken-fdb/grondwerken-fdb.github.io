@@ -258,6 +258,10 @@ $content-width: 75%;
     }
 }
 
+.site-title br {
+    display: none;
+}
+
 @media screen and (min-width: 600px) { // Only apply this to screens with minimum width of 600px
 
     .page-link {
@@ -283,6 +287,10 @@ $content-width: 75%;
 
     .page-content .wrapper {
         margin-left: 25%;
+    }
+
+    .site-title br {
+        display: block;
     }
 }
 
