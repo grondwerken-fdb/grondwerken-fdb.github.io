@@ -26,7 +26,8 @@ layout: default
 
   {% for item in site.static_files %}
     {% if item.path contains page.link and item.path contains "projects/" %}
-        {% if item.path contains ".jpg" %}
+        {% assign path_lowercase = item.path | downcase %}
+        {% if path_lowercase contains ".jpg" %}
           <div class = "project-box">
             {% assign file = site.projects | where_exp: "file", "file.path contains item.basename" | first %}
             {% if file %}
