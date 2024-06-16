@@ -38,7 +38,11 @@
             {%- endif -%}
 
             {%- if site.email -%}
-              <li><i class="fa fa-fw fa-envelope"></i> <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+              <li><i class="fa fa-fw fa-envelope"></i> <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+            {%- endif -%}
+
+            {%- if site.facebook_username -%}
+              <li><i class="fa fa-fw fa-facebook"></i> <a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}">{{ site.facebook_username | escape }}</a></li>
             {%- endif -%}
         </ul>
       </div>

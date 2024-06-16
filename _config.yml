@@ -35,7 +35,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://grondwerken-fdb.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-# facebook_username: 
+facebook_username: "Grondwerken.FDB"
 # instagram_username: 
 
 # Build settings

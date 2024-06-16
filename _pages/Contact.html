@@ -32,7 +32,8 @@ order: 2
       <li>Telefoon: {{site.tel}}</li>
       {% endif %}
       <li>GSM: {{site.mobile}}</li>
-      <li>Mail: <a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>Mail: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+      <li>Facebook: <a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}">{{ site.facebook_username | escape }}</a></li>
     </ul>
   </div>
 
