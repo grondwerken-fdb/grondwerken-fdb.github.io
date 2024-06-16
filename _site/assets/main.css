@@ -280,4 +280,5 @@ table td { border: 1px solid #e8e8e8; }
   .page-content .wrapper { margin-left: 25%; }
   .site-title br { display: block; } }
 @media (max-width: 800px) { .main-content .right { grid-column-start: 1; }
-  .dp-box { grid-template-columns: repeat(1, 1fr); } }
+  .dp-box, #address-box { grid-template-columns: repeat(1, 1fr); }
+  .maps { margin-top: 30px; } }
