@@ -277,8 +277,8 @@ table td { border: 1px solid #e8e8e8; }
 @media screen and (min-width: 600px) { .page-link { position: relative; bottom: 0; display: inline-block; line-height: inherit !important; transition: bottom ease 0.5s; }
   .page-link:hover { bottom: -10px; color: yellow; } }
 @media screen and (max-width: 600px) { .page-link { color: black !important; }
-  .page-content .wrapper { margin-left: 25%; }
-  .site-title br { display: block; } }
+  .site-title br { display: block; }
+  #GoUp { display: none; } }
 @media (max-width: 800px) { .main-content .right { grid-column-start: 1; }
   .dp-box, #address-box { grid-template-columns: repeat(1, 1fr); }
   .maps { margin-top: 30px; } }
